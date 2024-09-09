@@ -4,7 +4,7 @@ describe('Pepper comment', () => {
     cy.visit('https://www.pepper.pl/')
     cy.get('[data-t="acceptAll"]').click()
     cy.get('button.button--toW5-square.space--ml-2.button.button--shape-circle.button--type-primary.button--mode-white').click()
-    cy.get('[type="email"]').type("tescicki123)
+    cy.get('[type="email"]').type("tescicki123")
     cy.get('span').contains(' Kontynuuj ').click()
     cy.get('input[name="password"]').type('tajnehaslo123')
     cy.get('span').contains(' Zaloguj Się ').click()
