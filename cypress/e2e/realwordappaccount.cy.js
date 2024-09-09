@@ -1,3 +1,9 @@
+Cypress.on('test:after:run', (attributes) => {
+  /* eslint-disable no-console */
+  console.log('Test "%s" has finished in %dms', 
+    attributes.title, attributes.duration)
+})
+
 describe('it creates and deletes account', () => {
     it('user creates and deletes account', () => {
   

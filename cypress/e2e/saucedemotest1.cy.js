@@ -1,3 +1,9 @@
+Cypress.on('test:after:run', (attributes) => {
+  /* eslint-disable no-console */
+  console.log('Test "%s" has finished in %dms', 
+    attributes.title, attributes.duration)
+})
+
 describe('Pepper comment', () => {
   it('creates new comment', () => {
     //logowanie
